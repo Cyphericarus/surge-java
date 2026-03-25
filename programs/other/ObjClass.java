@@ -1,4 +1,4 @@
-package sample;
+package other;
 
 class Laptop {
     String model;
@@ -10,8 +10,9 @@ class Laptop {
         this.price = price;
     }
 
+    @Override
     public String toString() {
-        return "Laptop[model: " + this.model + ", price: " + this.price + "]";
+        return "Laptop [model: " + model + ", price: " + price + ", isBranded: " + isBranded + "]";
     }
 
     @Override
@@ -44,9 +45,11 @@ class Laptop {
             return false;
         return true;
     }
-
 }
 
 public class ObjClass {
-    
+    public static void main(String[] args) {
+        Laptop one = new Laptop("HP", 750, true);
+        System.out.println(one.toString());
+    }
 }
