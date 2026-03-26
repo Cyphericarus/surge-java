@@ -26,7 +26,7 @@ public class AverageMarks {
             // finding total marks
             int totalMarks = 0;
             for (int ele : marks) {
-                totalMarks += ele;
+                totalMarks += ele; 
             }
 
             System.out.println();
