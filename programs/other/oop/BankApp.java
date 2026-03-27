@@ -1,4 +1,4 @@
-package other;
+package other.oop;
 
 public class BankApp {
     static String bankName = "Sample Bank";
