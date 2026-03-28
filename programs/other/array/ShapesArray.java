@@ -47,6 +47,18 @@ class Rectangle extends Shape {
 
 public class ShapesArray {
     public static void main(String [] args) {
-        
+        Shape [] shapes = new Shape[3];
+
+        shapes[0] = new Square(9);
+        shapes[1] = new Circle(5);
+        shapes[2] = new Rectangle(4, 8);
+
+        getShapeArea(shapes);
+    }
+
+    public static void getShapeArea(Shape [] shapes) {
+        for(Shape shape: shapes) {
+            System.out.println("Area of " + shape.getClass().getName().replace("other.array.", "") + " is: " + shape.area());
+        }
     }
 }
