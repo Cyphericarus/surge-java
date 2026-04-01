@@ -1,11 +1,11 @@
 package other.oop;
 
-class Laptop {
+class Laptop1 {
     String model;
     int price;
     boolean isBranded;
 
-    Laptop(String model, int price, boolean isBranded) {
+    Laptop1(String model, int price, boolean isBranded) {
         this.model = model;
         this.price = price;
     }
@@ -33,7 +33,7 @@ class Laptop {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Laptop other = (Laptop) obj;
+        Laptop1 other = (Laptop1) obj;
         if (model == null) {
             if (other.model != null)
                 return false;
@@ -46,10 +46,9 @@ class Laptop {
         return true;
     }
 }
-
 public class ObjClass {
     public static void main(String[] args) {
-        Laptop one = new Laptop("HP", 750, true);
+        Laptop1 one = new Laptop1("HP", 750, true);
         System.out.println(one.toString());
     }
 }
