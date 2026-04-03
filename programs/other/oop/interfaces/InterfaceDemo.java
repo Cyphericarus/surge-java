@@ -1,5 +1,5 @@
 // loosely coupled objects
-package other.oop;
+package other.oop.interfaces;
 
 interface Computer {
     void code();

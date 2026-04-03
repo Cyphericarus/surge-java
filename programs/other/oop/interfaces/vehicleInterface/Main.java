@@ -1,4 +1,4 @@
-package other.oop.vehicleInterface;
+package other.oop.interfaces.vehicleInterface;
 
 interface Vehicle {
     void drive();
